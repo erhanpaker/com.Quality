@@ -12,6 +12,9 @@ public class QualitydemyPage {
     PageFactory.initElements(Driver.getDriver(),this);
   }
 
+  @FindBy(xpath = "//*[text()='Accept']")
+  public WebElement cookies;
+
 
 
 

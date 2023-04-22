@@ -13,5 +13,7 @@ public class test101 {
     public void test01(){
         Driver.getDriver().get(ConfigReader.getProperty("url"));
 
+        qualitydemyPage.cookies.click();
+
     }
 }
