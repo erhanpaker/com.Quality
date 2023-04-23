@@ -33,6 +33,9 @@ public class QualitydemyPage {
   @FindBy(xpath = "//i[@class='fa fa-align-justify']")
   public WebElement allCourses;
 
+  @FindBy(xpath = "/html/body/section[3]/div/div/div[2]/nav/ul/li[3]/a")
+  public WebElement saylamaLinki;
+
 
 
 

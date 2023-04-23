@@ -1,16 +1,23 @@
 package tests;
 
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import pages.QualitydemyPage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class test101 {
 
+    Actions actions = new Actions(Driver.getDriver());
     QualitydemyPage qualitydemyPage = new QualitydemyPage();
+
     @Test
 
-    // proje kodlarım ve anasayafa içerikleri
+
 
     public void test01(){
         Driver.getDriver().get(ConfigReader.getProperty("url"));
@@ -21,6 +28,10 @@ public class test101 {
         qualitydemyPage.loginButonu.click();
         qualitydemyPage.categories.click();
         qualitydemyPage.allCourses.click();
+        actions.sendKeys(Keys.PAGE_DOWN)
+                        .sendKeys(Keys.PAGE_DOWN).perform();
+        ReusableMethods.bekle(5);
+        qualitydemyPage.saylamaLinki.click();
 
     }
 }
