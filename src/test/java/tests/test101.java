@@ -33,5 +33,14 @@ public class test101 {
         ReusableMethods.bekle(5);
         qualitydemyPage.saylamaLinki.click();
 
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+
+        ReusableMethods.bekle(3);
+        qualitydemyPage.course.click();
+        ReusableMethods.bekle(2);
+        qualitydemyPage.buyNow.click();
+        ReusableMethods.bekle(2);
+        qualitydemyPage.checKout.click();
+
     }
 }

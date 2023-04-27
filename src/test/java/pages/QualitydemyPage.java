@@ -33,8 +33,17 @@ public class QualitydemyPage {
   @FindBy(xpath = "//i[@class='fa fa-align-justify']")
   public WebElement allCourses;
 
-  @FindBy(xpath = "/html/body/section[3]/div/div/div[2]/nav/ul/li[3]/a")
+  @FindBy(xpath = "//*[text()='3']")
   public WebElement saylamaLinki;
+
+  @FindBy(xpath = "(//img[@class='img-fluid'])[6]")
+  public WebElement course;
+
+  @FindBy(xpath = "//button[@class='btn btn-buy']")
+  public WebElement buyNow;
+
+  @FindBy(xpath = "//button[@class='btn red w-100 radius-10 mb-3']")
+  public WebElement checKout;
 
 
 
