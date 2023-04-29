@@ -52,6 +52,11 @@ public class test101 {
         qualitydemyPage.cvc.sendKeys("334");
         actions.sendKeys(Keys.TAB).perform();
         qualitydemyPage.sonKullanmaTarihi.sendKeys("1124");
+        actions.sendKeys(Keys.TAB).perform();
+        qualitydemyPage.kartİsim.sendKeys("erhan");
+        actions.sendKeys(Keys.TAB).perform();
+        qualitydemyPage.ode.click();
+
 
 
     }
