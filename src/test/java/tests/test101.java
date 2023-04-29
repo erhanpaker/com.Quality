@@ -41,6 +41,18 @@ public class test101 {
         qualitydemyPage.buyNow.click();
         ReusableMethods.bekle(2);
         qualitydemyPage.checKout.click();
+        ReusableMethods.bekle(5);
+        qualitydemyPage.stripe.click();
+        ReusableMethods.bekle(2);
+        qualitydemyPage.stripeButton.click();
+        qualitydemyPage.krediKartıEmail.sendKeys(ConfigReader.getProperty("GecerliMail"));
+        actions.sendKeys(Keys.TAB).perform();
+        qualitydemyPage.krediKartNumarası.sendKeys("4242424242424242");
+        actions.sendKeys(Keys.TAB).perform();
+        qualitydemyPage.cvc.sendKeys("334");
+        actions.sendKeys(Keys.TAB).perform();
+        qualitydemyPage.sonKullanmaTarihi.sendKeys("1124");
+
 
     }
 }

@@ -45,6 +45,24 @@ public class QualitydemyPage {
   @FindBy(xpath = "//button[@class='btn red w-100 radius-10 mb-3']")
   public WebElement checKout;
 
+  @FindBy(xpath = "//div[@class='col-12']")
+  public WebElement stripe;
+
+  @FindBy(xpath = "//button[@class='stripe-button payment-button float-end']")
+  public WebElement stripeButton;
+
+  @FindBy(xpath = "(//input[@class='CheckoutInput Input Input--empty'])[1]")
+  public WebElement krediKartıEmail;
+
+  @FindBy(xpath = "(//input[@class='CheckoutInput CheckoutInput--tabularnums Input Input--empty'])[1]")
+  public WebElement krediKartNumarası;
+
+  @FindBy(xpath = "(//input[@class='CheckoutInput CheckoutInput--tabularnums Input Input--empty'])[2]")
+  public WebElement cvc;
+
+  @FindBy(xpath = "(//input[@type='text'])[3]")
+  public WebElement sonKullanmaTarihi;
+
 
 
 
