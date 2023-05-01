@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utilities.ConfigReader;
 import utilities.Driver;
 
 public class QualitydemyPage {
@@ -10,6 +11,16 @@ public class QualitydemyPage {
   public QualitydemyPage(){
 
     PageFactory.initElements(Driver.getDriver(),this);
+  }
+
+  public void loginMetodu(){
+
+    Driver.getDriver().get(ConfigReader.getProperty("url"));
+    cookies.click();
+    loginLinki.click();
+    emailKutusu.sendKeys(ConfigReader.getProperty("GecerliMail"));
+    passwordKutusu.sendKeys(ConfigReader.getProperty("GecerliPassword"));
+    loginButonu.click();
   }
 
   @FindBy(xpath = "//*[text()='Accept']")

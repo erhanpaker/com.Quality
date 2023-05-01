@@ -15,9 +15,6 @@ public class test101 {
     Actions actions = new Actions(Driver.getDriver());
     QualitydemyPage qualitydemyPage = new QualitydemyPage();
 
-    @Test
-
-
 
     public void test01(){
         Driver.getDriver().get(ConfigReader.getProperty("url"));
@@ -26,6 +23,8 @@ public class test101 {
         qualitydemyPage.emailKutusu.sendKeys(ConfigReader.getProperty("GecerliMail"));
         qualitydemyPage.passwordKutusu.sendKeys(ConfigReader.getProperty("GecerliPassword"));
         qualitydemyPage.loginButonu.click();
+
+
         qualitydemyPage.categories.click();
         qualitydemyPage.allCourses.click();
         actions.sendKeys(Keys.PAGE_DOWN)
@@ -61,8 +60,9 @@ public class test101 {
     @Test
     public void test1002(){
 
-        Driver.getDriver().get(ConfigReader.getProperty("url"));
-        qualitydemyPage.cookies.click();
+        qualitydemyPage.loginMetodu();
+
+
 
     }
 }
