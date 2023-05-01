@@ -36,7 +36,7 @@ public class QualitydemyPage {
   @FindBy(xpath = "//*[text()='3']")
   public WebElement saylamaLinki;
 
-  @FindBy(xpath = "(//img[@class='img-fluid'])[7]")
+  @FindBy(xpath = "(//img[@class='img-fluid'])[5]")
   public WebElement course;
 
   @FindBy(xpath = "//button[@class='btn btn-buy']")

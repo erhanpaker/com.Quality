@@ -56,8 +56,13 @@ public class test101 {
         qualitydemyPage.kartİsim.sendKeys("erhan");
         actions.sendKeys(Keys.TAB).perform();
         qualitydemyPage.ode.click();
+    }
 
+    @Test
+    public void test1002(){
 
+        Driver.getDriver().get(ConfigReader.getProperty("url"));
+        qualitydemyPage.cookies.click();
 
     }
 }
