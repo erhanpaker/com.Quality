@@ -83,6 +83,9 @@ public class QualitydemyPage {
   @FindBy(xpath = "//div[@class='SubmitButton-IconContainer']")
   public WebElement ode;
 
+  @FindBy(xpath = "//h5[text()='Web Design for PHP']")
+  public WebElement phpKursu;
+
 
 
 

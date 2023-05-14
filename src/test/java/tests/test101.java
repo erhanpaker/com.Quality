@@ -25,10 +25,12 @@ public class test101 {
         qualitydemyPage.loginButonu.click();
 
 
+
+
         qualitydemyPage.categories.click();
-        qualitydemyPage.allCourses.click();
+        ReusableMethods.bekle(4);
         actions.sendKeys(Keys.PAGE_DOWN)
-                        .sendKeys(Keys.PAGE_DOWN).perform();
+                .sendKeys(Keys.PAGE_DOWN).perform();
         ReusableMethods.bekle(5);
         qualitydemyPage.saylamaLinki.click();
 
@@ -56,11 +58,18 @@ public class test101 {
         actions.sendKeys(Keys.TAB).perform();
         qualitydemyPage.ode.click();
     }
-
+     // ikinci test
     @Test
     public void test1002(){
 
         qualitydemyPage.loginMetodu();
+
+        actions.sendKeys(Keys.TAB).
+                sendKeys(Keys.TAB).perform();
+          ReusableMethods.bekle(5);
+          qualitydemyPage.phpKursu.click();
+
+
 
 
 
